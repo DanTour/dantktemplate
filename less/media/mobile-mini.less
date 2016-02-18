@@ -1,0 +1,463 @@
+// Smartphones, iPhone, portrait 480x320 phones
+@page-font : 'PT Sans', sans-serif;
+@basic-color : #10274c;
+@base-font : 27px;
+@padding-phones : 90px;
+@padding-menu : 30px;
+@font-w : 700;
+
+
+
+* {
+	margin : 0;
+	padding : 0;
+}
+.no-gutter {
+	padding-left : 0;
+	padding-right : 0;
+}
+html, body {
+	font-family : @page-font;
+	font-size : @base-font;
+}
+
+
+.navbar-brand {
+	width: 100%;
+    height: 90px;
+	background : url(../../images/logos/logo-original.png) no-repeat;
+	background-size : 72%;
+	background-position : 110px 50%;
+}
+.navbar-default {
+	background-color : @basic-color;
+	opacity : 0.85;
+	border-radius : 0;
+	border : none;
+	position : relative;
+}
+
+.phones-main {
+		float : left;
+		font-weight : bold;
+		text-transform : uppercase;
+		color : #fff;
+		padding-top : @padding-menu * 0.4;
+		padding-left : @padding-phones;
+		
+}
+
+.nav{
+	font-family : @page-font;
+	font-size : @base-font;
+	margin-left : 2 * @padding-menu;
+	float : left;
+	
+	&:nth-child(1) {
+		margin-left : @padding-menu * 0.75;
+				
+		a {
+			padding-left : @padding-menu / 4;
+		}
+	}
+	
+	li {
+		display : inline-block;
+		font-weight : bold;
+		text-transform : uppercase;
+		
+		a {
+			padding-top : @padding-menu;
+			padding-bottom : @padding-menu;
+			padding-left : @padding-menu;
+			padding-right : @padding-menu;
+			color : white;
+		
+			&:hover {
+				background-color : rgba(0,0,0,.2);
+			}
+		}
+	}
+}
+
+
+// media query font different resolutions 
+@media (max-width: 1919px) {
+		@base-font : 24px;
+		@padding-menu : 20px;
+		@padding-phones : 60px;
+		
+.navbar-brand {
+	background : url(../../images/logos/logo-original.png) no-repeat;
+	background-size : 60%;
+	background-position : 110px 50%;
+}
+.navbar-default {
+	background-color : @basic-color;
+	opacity : 0.85;
+	border-radius : 0;
+	border : none;
+	position : relative;
+}
+
+.phones-main {
+		float : left;
+		font-size : @base-font;
+		font-weight : bold;
+		text-transform : uppercase;
+		color : #fff;
+		padding-top : @padding-menu * 0.4;
+		padding-left : @padding-phones;
+		
+}
+
+.nav{
+	font-family : @page-font;
+	font-size : @base-font;
+	margin-left : 2 * @padding-menu;
+	float : left;
+	
+	&:nth-child(1) {
+		margin-left : @padding-menu * 0.75;
+				
+		a {
+			padding-left : @padding-menu / 4;
+		}
+	}
+	
+	li {
+		display : inline-block;
+		font-weight : bold;
+		text-transform : uppercase;
+		
+		a {
+			padding-top : 1.5 * @padding-menu;
+			padding-bottom : 1.5 * @padding-menu;
+			padding-left : @padding-menu;
+			padding-right : @padding-menu;
+			color : white;
+		
+			&:hover {
+				background-color : rgba(0,0,0,.2);
+			}
+		}
+	}
+}
+		
+}
+
+@media (max-width: 1571px) {
+	@base-font : 20px;
+	@padding-menu : 15px;
+	@padding-phones : 40px;
+	.navbar-brand {
+	background : url(../../images/logos/logo-original.png) no-repeat;
+	background-size : 60%;
+	background-position : 110px 50%;
+}
+.navbar-default {
+	background-color : @basic-color;
+	opacity : 0.85;
+	border-radius : 0;
+	border : none;
+	position : relative;
+}
+
+.phones-main {
+		float : left;
+		font-size : @base-font;
+		font-weight : bold;
+		text-transform : uppercase;
+		color : #fff;
+		padding-top : @padding-menu;
+		padding-left : @padding-phones;
+		
+}
+
+.nav{
+	font-family : @page-font;
+	font-size : @base-font;
+	margin-left :  @padding-menu;
+	float : left;
+	
+	&:nth-child(1) {
+		margin-left : @padding-menu * 0.3;
+				
+		a {
+			padding-left : @padding-menu / 4;
+		}
+	}
+	
+	li {
+		display : inline-block;
+		font-weight : bold;
+		text-transform : uppercase;
+		
+		a {
+			padding-top : 2 * @padding-menu;
+			padding-bottom : 2 * @padding-menu;
+			padding-left : @padding-menu;
+			padding-right : @padding-menu;
+			color : white;
+		
+			&:hover {
+				background-color : rgba(0,0,0,.2);
+			}
+		}
+	}
+}
+}
+@media (max-width: 1258px) {
+	@base-font : 18px;
+	@padding-menu : 10px;
+	@padding-phones : 40px;
+	
+	
+	.navbar-brand {
+		height : 70px;
+		background : url(../../images/logos/logo_sm.png) no-repeat;
+		background-size : 60%;
+		background-position : 110px 50%;
+	}
+	.navbar-default {
+		background-color : @basic-color;
+		opacity : 0.85;
+		border-radius : 0;
+		border : none;
+		position : relative;
+	}
+
+	.phones-main {
+			float : left;
+			font-size : @base-font;
+			font-weight : bold;
+			text-transform : uppercase;
+			color : #fff;
+			padding-top : @padding-menu;
+			padding-left : @padding-phones;
+			
+	}
+
+	.nav{
+		font-family : @page-font;
+		font-size : @base-font;
+		margin-left :  @padding-menu * 5;
+		float : left;
+		
+		&:nth-child(1) {
+			margin-left : @padding-menu * 0.3;
+					
+			a {
+				padding-left : @padding-menu / 4;
+			}
+		}
+		
+		li {
+			display : inline-block;
+			font-weight : bold;
+			text-transform : uppercase;
+			
+			a {
+				padding-top : 2 * @padding-menu;
+				padding-bottom : 2 * @padding-menu;
+				padding-left : @padding-menu;
+				padding-right : @padding-menu;
+				color : white;
+			
+				&:hover {
+					background-color : rgba(0,0,0,.2);
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 975px) {
+	@base-font : 16px;
+	@padding-menu : 10px;
+	@padding-phones : 40px;
+	
+	.navbar-default {
+		background-color : @basic-color;
+		opacity : 0.85;
+		border-radius : 0;
+		border : none;
+		position : relative;
+	}
+	
+	.navbar-brand {
+		height : 70px;
+		background : url(../../images/logos/logo_sm.png) no-repeat;
+		background-size : 60%;
+		background-position : 50px 50%;
+	}
+	
+	.nav{
+		font-family : @page-font;
+		font-size : @base-font;
+		float : left;
+		margin-left : 0;
+		
+		&:nth-child(1) {
+			margin-left : @padding-menu * 0.3;
+					
+			a {
+				padding-left : @padding-menu / 4;
+			}
+		}
+		
+		li {
+			display : inline-block;
+			font-weight : bold;
+			text-transform : uppercase;
+			
+			a {
+				padding-top : 2 * @padding-menu;
+				padding-bottom : 2 * @padding-menu;
+				padding-left : @padding-menu;
+				padding-right : @padding-menu;
+				color : white;
+			
+				&:hover {
+					background-color : rgba(0,0,0,.2);
+				}
+			}
+		}
+	}
+}
+	
+
+
+@media (max-width : 767px) {
+	
+	.navbar-brand {
+			display : none;
+	}
+	
+	.navbar-default .navbar-toggle{
+		&:hover {
+			background-color : rgba(0,0,0,.2);
+		}
+		&:focus {
+			background-color : rgba(0,0,0,.2);
+		}
+	}
+	.nav {
+		width : 100%;
+		
+		li {
+			display : block;
+			
+			a {
+				display : block;
+			}
+		}
+	}
+}
+// menu media ends!
+
+/*.carousel-inner > .item {
+	background-size : cover;
+	height : 630px;
+}*/
+
+#myCarousel {
+	z-index : -1;
+	width : 100%;
+	position : absolute;
+	top : 0;
+	left : 0;
+}
+.carousel-indicators, .carousel-control {
+	display : none;
+}
+
+
+/// Triangle menu styles 
+
+#triangle-menu {
+	position : relative;
+	margin-top : -20px;
+	background : url(../../images/arrows/image_bg.png) no-repeat;
+	background-size : 100% 85%;
+	background-position : 0 0;
+	padding-bottom : 420px;
+		
+	&:after {
+		position : absolute;
+		content : " ";
+		width: 0;
+		height: 0;
+		border-left: 50% solid transparent;
+		border-right: 50% solid transparent;
+		border-top: 100% solid red;
+	}
+		li {
+			display : block;
+			background-color : transparent;
+			
+			a {
+				margin-left : 0;
+				text-transform : uppercase;
+				font-family : @page-font;
+				font-size : @base-font - 2;
+				margin-left : 0;
+				padding-left : @padding-menu * 1.8;
+				padding-top : @padding-menu;
+				padding-bottom : 0;
+				padding-right : @padding-menu * 2;
+				
+				&:hover {
+					background-color : transparent;
+					text-decoration : underline;
+				}
+				
+				/*&:nth-child(1) {
+					margin-left : 0;
+				}*/
+			}
+			
+			span {
+				display : block;
+				color : white;
+				text-transform : uppercase;
+				font-family : @page-font;
+				font-size : @base-font - 2;
+				margin-left : 0;
+				padding-left : @padding-menu * 1.8 ;
+				padding-top : @padding-menu;
+				padding-right : @padding-menu * 2;
+				padding-bottom : 0;
+				cursor : pointer;
+				
+				&:hover {
+					background-color : transparent;
+					text-decoration : underline;
+				}
+			}
+			
+			&:hover {
+				background-color : transparent;
+			}
+			
+			/*&:nth-child(1) {
+				background : url(../../images/icons/icons_sprite.png) no-repeat;
+				background-position : 25px 35px;
+			}
+			&:nth-child(2) {
+				background : url(../../images/icons/icons_sprite.png) no-repeat;
+				background-position : 25px -33px;
+			}
+			
+			&:nth-child(3) {
+				background : url(../../images/icons/icons_sprite.png) no-repeat;
+				background-position : 25px -98px;
+			}
+			
+			&:nth-child(4) {
+				background : url(../../images/icons/icons_sprite.png) no-repeat;
+				background-position : 25px -154px;
+			}*/
+		}
+}
+
