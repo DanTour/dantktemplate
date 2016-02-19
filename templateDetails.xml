@@ -59,7 +59,8 @@
 		<position>main_menu</position>
 		<position>header_carousel</position>
 		<position>triangle_menu</position>
-    </positions>
+		<position>footer_menu</position>
+	</positions>
 
     <config>
         <fields name="params">

@@ -6,7 +6,24 @@
 @padding-menu : 30px;
 @font-w : 700;
 
-
+/*.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+	color : white;
+	background-color : transparent;
+}*/
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover  {
+		color : white;
+		background : transparent;
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	color : white;
+	background : transparent;
+}
+.navbar-nav>li>a {
+	line-height : 1em;
+}
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color : rgba(0,0,0,.2);
+}
 
 * {
 	margin : 0;
@@ -44,10 +61,22 @@ html, body {
 		color : #fff;
 		padding-top : @padding-menu * 0.4;
 		padding-left : @padding-phones;
+		a {
+			display : block;
+			color : #fff;
+			
+			&:hover {
+				text-decoration : none;
+			}
+			
+			&:focus {
+				text-decoration : none;
+			}
+		}
 		
 }
 
-.nav{
+.menu.nav{
 	font-family : @page-font;
 	font-size : @base-font;
 	margin-left : 2 * @padding-menu;
@@ -111,7 +140,7 @@ html, body {
 		
 }
 
-.nav{
+.menu.nav{
 	font-family : @page-font;
 	font-size : @base-font;
 	margin-left : 2 * @padding-menu;
@@ -132,7 +161,7 @@ html, body {
 		
 		a {
 			padding-top : 1.5 * @padding-menu;
-			padding-bottom : 1.5 * @padding-menu;
+			padding-bottom : 1.7 * @padding-menu;
 			padding-left : @padding-menu;
 			padding-right : @padding-menu;
 			color : white;
@@ -174,7 +203,7 @@ html, body {
 		
 }
 
-.nav{
+.menu.nav{
 	font-family : @page-font;
 	font-size : @base-font;
 	margin-left :  @padding-menu;
@@ -195,7 +224,7 @@ html, body {
 		
 		a {
 			padding-top : 2 * @padding-menu;
-			padding-bottom : 2 * @padding-menu;
+			padding-bottom : 2.6 * @padding-menu;
 			padding-left : @padding-menu;
 			padding-right : @padding-menu;
 			color : white;
@@ -238,7 +267,7 @@ html, body {
 			
 	}
 
-	.nav{
+	.menu.nav{
 		font-family : @page-font;
 		font-size : @base-font;
 		margin-left :  @padding-menu * 5;
@@ -259,7 +288,7 @@ html, body {
 			
 			a {
 				padding-top : 2 * @padding-menu;
-				padding-bottom : 2 * @padding-menu;
+				padding-bottom : 3 * @padding-menu;
 				padding-left : @padding-menu;
 				padding-right : @padding-menu;
 				color : white;
@@ -292,7 +321,7 @@ html, body {
 		background-position : 50px 50%;
 	}
 	
-	.nav{
+	.menu.nav{
 		font-family : @page-font;
 		font-size : @base-font;
 		float : left;
@@ -312,8 +341,8 @@ html, body {
 			text-transform : uppercase;
 			
 			a {
-				padding-top : 2 * @padding-menu;
-				padding-bottom : 2 * @padding-menu;
+				padding-top : 3 * @padding-menu;
+				padding-bottom : 3 * @padding-menu;
 				padding-left : @padding-menu;
 				padding-right : @padding-menu;
 				color : white;
@@ -342,18 +371,21 @@ html, body {
 			background-color : rgba(0,0,0,.2);
 		}
 	}
-	.nav {
+	.menu.nav {
 		width : 100%;
-		
 		li {
 			display : block;
 			
 			a {
 				display : block;
+				padding-top : 10px;
+				padding-bottom : 10px;
+				padding-left : 20px;
 			}
 		}
 	}
 }
+
 // menu media ends!
 
 /*.carousel-inner > .item {
@@ -376,14 +408,10 @@ html, body {
 /// Triangle menu styles 
 
 #triangle-menu {
-	position : relative;
-	margin-top : -20px;
-	background : url(../../images/arrows/image_bg.png) no-repeat;
 	background-size : 100% 85%;
 	background-position : 0 0;
-	padding-bottom : 420px;
-		
-	&:after {
+	
+	/*&:after {
 		position : absolute;
 		content : " ";
 		width: 0;
@@ -391,7 +419,7 @@ html, body {
 		border-left: 50% solid transparent;
 		border-right: 50% solid transparent;
 		border-top: 100% solid red;
-	}
+	}*/
 		li {
 			display : block;
 			background-color : transparent;
@@ -400,7 +428,7 @@ html, body {
 				margin-left : 0;
 				text-transform : uppercase;
 				font-family : @page-font;
-				font-size : @base-font - 2;
+				font-size : @base-font - 5;
 				margin-left : 0;
 				padding-left : @padding-menu * 1.8;
 				padding-top : @padding-menu;
@@ -422,7 +450,7 @@ html, body {
 				color : white;
 				text-transform : uppercase;
 				font-family : @page-font;
-				font-size : @base-font - 2;
+				font-size : @base-font - 5;
 				margin-left : 0;
 				padding-left : @padding-menu * 1.8 ;
 				padding-top : @padding-menu;
@@ -461,3 +489,200 @@ html, body {
 		}
 }
 
+.triangle-wrapper {
+	background : url(../../images/arrows/arrow_bg.png) no-repeat;
+	background-size : 100% 85%;
+	background-position : 0 0;
+	padding-bottom : 340px;
+	margin-top : -20px;
+	//margin-left : px;
+	
+	.soc-buttons {
+		margin-top : @padding-menu * 2.6;
+		margin-left : @padding-menu * 0.8;
+		a {
+			display : inline-block;
+			height : 68px;
+			width : 70px;
+		}
+		
+		.tr-vk {
+			background-image : url(../../images/sprites/soc-media.png);
+			background-position : -22px -3px;
+			
+			&:hover {
+				background-position : -22px 70px;
+			}
+		}
+		
+		.tr-twitter {
+			background-image : url(../../images/sprites/soc-media.png);
+			background-position : -97px -3px;
+			
+			&:hover {
+				background-position : -97px 210px;
+			}
+		}
+		
+		.tr-youtube {
+			background-image : url(../../images/sprites/soc-media.png);
+			background-position : -172px -3px;
+			
+			&:hover {
+				background-position : -172px 350px;
+			}
+		}
+		
+		.tr-facebook {
+			background-image : url(../../images/sprites/soc-media.png);
+			background-position : -247px -3px;
+			
+			&:hover {
+				background-position : -247px 490px;
+			}
+		}
+		.tr-instagram {
+			background-image : url(../../images/sprites/soc-media.png);
+			background-position : -312px -3px;
+			
+			&:hover {
+				background-position : -312px 630px;
+			}
+		}		
+	}
+}
+
+// FOOTER BLOCK CSS 
+
+
+.footer-bottom {
+	background-color : #061125;
+	
+	a {
+		display : inline-block;
+		width : 210px;
+		height : 60px;
+		margin-left : 20px;
+		margin-top : 5px;
+		background-image : url(../../images/logos/copy-dan-idle.png);
+		background-repeat : no-repeat;
+		
+		&:hover {
+			background-image : url(../../images/logos/copy-dan-hover.png);
+		}
+	}
+	
+	p {
+		float : right;
+		padding-bottom : 20px;
+		margin-right : 50px;
+		margin-top : 25px;
+		font-size : 14px;
+		color : #7c8698;
+	}
+}
+.footer-top {
+	background-color : #081730;
+	
+}
+.footer-contacts {
+		h4 {
+			//font-family : 'RobotoSlab';
+			margin-left : 20px;
+			margin-top : 35px;
+			font-size : 16px;
+			color : white;
+			text-transform : uppercase;
+			font-weight : bold;
+		}
+		
+		.phones {
+			ul {
+				padding-left : 75px;
+				background : url(../../images/icons/tel-footer.png) no-repeat;
+				background-position : 13px 15px;
+				
+				li {
+					list-style-type : none;
+					
+					a {
+						font-size : 20px;
+						font-weight : bold;
+						color : white;
+					}
+				}
+			}
+		}
+		
+.adress, .emails {
+		float : left;
+		margin-left : 20px;
+		ul {
+			&:nth-child(1) {
+				text-transform : uppercase;
+				font-weight : bold;
+				font-size : 14px;
+				color : white;
+			}
+			
+			li {
+				list-style-type : none;
+				
+				span {
+					text-transform : none;
+					color : #a2aec1;
+					font-size : 14px;
+				}
+				
+				a {
+					text-transform : none;
+					font-size : 14px;
+					font-weight : normal;
+					color : white;
+					
+					&:focus {
+						text-decoration : none;
+					}
+				}
+			}
+		}
+	}	
+}
+
+
+.panel-group {
+	margin-top : 25px;
+	margin-left : 35px;
+	margin-right : 35px;
+}
+
+.panel {
+	border : none;
+}
+
+.panel-group .panel+.panel {
+	margin-top : 25px;
+}
+
+.panel-heading {
+		padding : 0;
+}
+
+.panel-default>.panel-heading {
+	background-color : #212e45;
+	
+	.panel-title {
+		
+		a {
+			padding: 10px 15px; 
+			display : block;
+			text-transform : uppercase;
+			text-decoration : none;
+			font-size : 14px;
+			color : white;
+			font-weight : bold;
+			height : 100%
+			width : 100%;
+		}
+	}
+}
