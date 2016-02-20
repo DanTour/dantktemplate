@@ -60,6 +60,7 @@
 		<position>header_carousel</position>
 		<position>triangle_menu</position>
 		<position>footer_menu</position>
+		<position>sub_menu</position>
 	</positions>
 
     <config>
